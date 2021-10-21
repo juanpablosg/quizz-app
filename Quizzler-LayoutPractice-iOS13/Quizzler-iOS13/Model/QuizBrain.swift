@@ -82,3 +82,4 @@ struct QuizBrain {
 //        Float(questionNumber) / Float(quiz.count - 1)
 //    }
 }
+
