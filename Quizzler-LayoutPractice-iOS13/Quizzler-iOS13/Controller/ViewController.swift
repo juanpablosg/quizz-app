@@ -8,16 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
-    @IBOutlet weak var scoreLabel: UILabel!
-    @IBOutlet weak var questionLabel: UILabel!
-    @IBOutlet weak var progressBar: UIProgressView!
-    @IBOutlet weak var answer1Button: UIButton!
-    @IBOutlet weak var answer2Button: UIButton!
-    @IBOutlet weak var answer3Button: UIButton!
+    @IBOutlet private weak var scoreLabel: UILabel!
+    @IBOutlet private weak var questionLabel: UILabel!
+    @IBOutlet private weak var progressBar: UIProgressView!
+    @IBOutlet private weak var answer1Button: UIButton!
+    @IBOutlet private weak var answer2Button: UIButton!
+    @IBOutlet private weak var answer3Button: UIButton!
     
-    var quizBrain = QuizBrain()
+    private var quizBrain = QuizBrain()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         updateUI()
     }
 
-    @IBAction func answerButtonPressed(_ sender: UIButton) {
+    @IBAction private func answerButtonPressed(_ sender: UIButton) {
         
        
         
